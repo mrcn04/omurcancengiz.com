@@ -223,7 +223,7 @@ a {
 }
 
 .button2 {
-	margin-left: -12px;
+	margin-left: -11px;
 	z-index: 1;
 	border-top-left-radius: 100px;
 	border-bottom-left-radius: 100px;
@@ -234,7 +234,7 @@ a {
 }
 
 .button3 {
-	margin-left: -12px;
+	margin-left: -11px;
 	border-top-left-radius: 100px;
 	border-bottom-left-radius: 100px;
 }
@@ -305,5 +305,11 @@ a {
 	.buttons:hover {
 		padding-right: 4em;
 		padding-left: 4em;	
+	}
+
+	.button1,
+	.button2,
+	.button3 {
+		padding-left: 16px;
 	}
 }
