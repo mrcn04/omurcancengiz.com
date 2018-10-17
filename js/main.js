@@ -43,7 +43,6 @@ function init () {
 			this.classList.add("selected"); //this refers to the one which is selected
 		});
 	}
-
 }
 
 function description() {
