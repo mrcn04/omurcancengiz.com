@@ -274,6 +274,7 @@ a {
 	.buttons {
 		letter-spacing: 0.2em;
 		padding-left: 15px;
+		font-size: 0.52rem;
 	}
 
 	.about {
@@ -282,7 +283,7 @@ a {
 
 	.selected::before {
 		left: 9px;
-		top: 7px;
+		top: 5px;
 	}
 }
 
