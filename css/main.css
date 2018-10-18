@@ -210,6 +210,7 @@ a {
 	transition: padding-right 0.3s;
 	transition: padding-left 0.3s;
 	transition-timing-function: ease;
+	border-color: rgba(0, 0, 0, 0);
 }
 
 .buttons:active {
@@ -222,7 +223,7 @@ a {
 }
 
 .button2 {
-	margin-left: -11px;
+	margin-left: -13px;
 	z-index: 1;
 	border-top-left-radius: 100px;
 	border-bottom-left-radius: 100px;
@@ -233,7 +234,7 @@ a {
 }
 
 .button3 {
-	margin-left: -11px;
+	margin-left: -13px;
 	border-top-left-radius: 100px;
 	border-bottom-left-radius: 100px;
 }
@@ -244,7 +245,7 @@ a {
 	height: 4px;
 	width: 4px;
 	position: absolute;
-	left: 8px;
+	left: 11px;
 	top: 6px;
 	border-radius: 20px;
 }
@@ -272,10 +273,16 @@ a {
 
 	.buttons {
 		letter-spacing: 0.2em;
+		padding-left: 15px;
 	}
 
 	.about {
 		padding-left: 0.8rem;
+	}
+
+	.selected::before {
+		left: 9px;
+		top: 7px;
 	}
 }
 
@@ -309,6 +316,6 @@ a {
 	.button1,
 	.button2,
 	.button3 {
-		padding-left: 16px;
+		padding-left: 19px;
 	}
 }
