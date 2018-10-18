@@ -258,12 +258,12 @@ a {
 		flex-direction: column;
 		justify-content: center;
 		align-items: center;
-		padding: 5rem 3rem;
+		padding: 5rem 2rem;
 	}
 
 	.side {
 		margin-bottom: 3rem;
-		width: 100%;
+		width: 90%;
 	}
 
 	.name {
