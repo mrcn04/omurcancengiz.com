@@ -1,3 +1,7 @@
+### Versiom 1.1.2
+
+Mobile responsive issues fixed, resized the background
+
 ### Version 1.1.1
 
 Website icon added
