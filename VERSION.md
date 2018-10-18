@@ -1,3 +1,7 @@
+### Version 1.1.1
+
+Website icon added
+
 ### Version 1.1.0
 
 UI addings
