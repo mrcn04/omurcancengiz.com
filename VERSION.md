@@ -1,3 +1,7 @@
+### Version 1.1.3
+
+Buttons size changed, dot position changed
+
 ### Versiom 1.1.2
 
 Mobile responsive issues fixed, resized the background
