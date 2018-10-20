@@ -197,7 +197,7 @@ a {
 	display: inline-block;
 	font-size: 0.65rem;
 	line-height: 1.4;
-	padding: 0.20em 1.3em;
+	padding: 0.10em 1.3em;
 	margin-top: 0.20em;
 	margin-bottom: 1.5em;
 	text-shadow: none;
@@ -275,6 +275,8 @@ a {
 		letter-spacing: 0.2em;
 		padding-left: 15px;
 		font-size: 0.52rem;
+		padding-top: 0.20em;
+		padding-bottom: 0.20em;
 	}
 
 	.about {
@@ -283,7 +285,7 @@ a {
 
 	.selected::before {
 		left: 9px;
-		top: 5px;
+		top: 0.55em;
 	}
 }
 
