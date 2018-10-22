@@ -1,3 +1,7 @@
+#### Version 1.1.5
+
+Added meta tags for keywords and description
+
 #### Version 1.1.4
 
 Decompressed background size, reduced background resolution and files size // accelerated site opening
