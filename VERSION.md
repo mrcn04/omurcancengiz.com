@@ -1,3 +1,7 @@
+#### Version 1.1.6
+
+Changed meta tags keywords, added gtag.js
+
 #### Version 1.1.5
 
 Added meta tags for keywords and description

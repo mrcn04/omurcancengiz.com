@@ -1,3 +1,3 @@
-## Live version 1.1.5
+## Live version 1.1.6
 
 ###### Licensed by MIT
