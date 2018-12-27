@@ -1,3 +1,7 @@
+### Version 1.2
+
+Changed all content about me and fixed bugs.
+
 #### Version 1.1.6
 
 Changed meta tags keywords, added gtag.js
@@ -26,7 +30,7 @@ Website icon added
 
 UI addings
 
-#### Version 1.0.0
+### Version 1.0.0
 
 First live version
 

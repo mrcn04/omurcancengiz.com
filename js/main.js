@@ -1,8 +1,8 @@
 var modeButton = document.querySelectorAll(".mode");
 var summary = document.querySelector(".summary");
 var text = document.querySelector(".summary").textContent;
-var frontend = "On the Frontend, I'm writing HTML, CSS, JavaScript and DOM Manipulation. I'm also using libraries such as Bootstrap and jQuery as well. As the extension languages, I worked with LESS and SASS.";
-var backend = "I'm teaching myself to Backend part either. I think It is a good idea to know both sides. I'm using Node.js, Express.js and EJS on my projects as Backend side.";
+var frontend = "I'm maintaining my projects on Frontend with HTML, CSS, JavaScript, Bootstrap, jQuery etc. which I am highly skilled on and remodeling my skills with specializing on React.js";
+var backend = "On the journey of becoming Full Stack Developer, I'm improving my skills on Node.js, Express.js, EJS, Passport.js etc. as Backend and MongoDB with Mongoose as NoSQL database.";
 
 init();
 description();
