@@ -21,9 +21,7 @@ a {
 	text-decoration: none;
 }
 
-
 /* 2nd part | wallpaper part 1 | Shared */
-
 
 .wallpaper,
 .picture-shadow,
@@ -50,9 +48,7 @@ a {
 	transition-duration: 200ms;
 }
 
-
 /* 3rd part | wallpaper part 2 | specific */
-
 
 .wallpaper {
 	background-image: url("../images/bg3.jpg");
@@ -250,9 +246,7 @@ a {
 	border-radius: 20px;
 }
 
-
 /* 4th part Responsiveness */
-
 
 @media screen and (max-width: 799px) {
 	.content {
