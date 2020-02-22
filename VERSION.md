@@ -1,3 +1,7 @@
+### Version 1.3
+
+Content change & optimize SEO.
+
 ### Version 1.2
 
 Changed all content about me and fixed bugs.

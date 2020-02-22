@@ -1,11 +1,8 @@
 var modeButton = document.querySelectorAll(".mode");
 var summary = document.querySelector(".summary");
 var text = document.querySelector(".summary").textContent;
-var frontend = "I'm maintaining my projects on Frontend with HTML, CSS, JavaScript, Bootstrap, jQuery etc. which I am highly skilled on and remodeling my skills with specializing on React.js";
-var backend = "On the journey of becoming Full Stack Developer, I'm improving my skills on Node.js, Express.js, EJS, Passport.js etc. as Backend and MongoDB with Mongoose as NoSQL database.";
-
-init();
-description();
+var frontend = "I'm maintaining my projects on the Frontend with technologies such as ECMAScript 6, EJS, SASS, React -with Hooks-, Redux & bundle all of them with Webpack. Next stop, Typescript.";
+var backend = "I am a huge fan of Node.js. That's why on the Backend, I am focused on Express.js and MongoDB among with Babel. Within no time, I'll develop myself on GraphQL as well.";
 
 function loadImage(id, targetId) {
 	var el = document.getElementById(id);
@@ -32,6 +29,8 @@ function loadImage(id, targetId) {
 document.addEventListener('DOMContentLoaded', function() {
 	loadImage('wallpaper');
 	loadImage('pictureImage', 'picture');
+	init();
+	description();
 });
 
 function init () {
