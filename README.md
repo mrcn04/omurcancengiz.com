@@ -1,4 +1,4 @@
-## Live version 1.3
+## Live version 1.4
 
 This is my personal website to introduce me and my skills with the given links.
 
