@@ -4,7 +4,8 @@
   "description": "ömürcan cengiz's personal website",
   "main": "index.js",
   "scripts": {
-    "start": "node index.js",
+    "start": "node .",
+    "build": "node .",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -28,5 +29,8 @@
   "dependencies": {
     "express": "^4.17.1",
     "path": "^0.12.7"
+  },
+  "devDependencies": {
+    "@vercel/node": "^1.8.1"
   }
 }

@@ -9,6 +9,10 @@ app.get('/', (req, res) => {
     res.sendFile(path.join(__dirname + '/index.html'));
 })
 
+app.get('/apis', (req, res) => {
+    res.status(200).json({ endpoints: { health: '/health', main: '/' } });
+})
+
 app.get('/health', (req, res) => {
     res.status(200).json({ status: 'Connected!', date: new Date() });
 })
