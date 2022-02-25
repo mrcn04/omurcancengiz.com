@@ -3,7 +3,7 @@ module.exports = {
     title: `omurcancengiz.com`,
     description: `Ömürcan Cengiz, Fullstack Developer`,
     author: `Ömürcan Cengiz`,
-    siteUrl: `http://www.omurcancengiz.com`,
+    siteUrl: `https://www.omurcancengiz.com`,
   },
   plugins: [
     `gatsby-plugin-react-helmet`,

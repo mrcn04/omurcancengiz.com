@@ -73,6 +73,7 @@ html {
   padding-top: 100%;
   position: relative;
   width: 100%;
+  margin: 0;
 }
 
 .picture-shadow {
@@ -217,7 +218,7 @@ html {
     align-items: center;
     padding: 0 8rem;
     margin: 0 auto;
-    max-width: 1600px;
+    max-width: 1500px;
   }
   .side {
     flex-grow: 0;
