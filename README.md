@@ -1,4 +1,4 @@
-# logger-factory
+# omurcancengiz.com
 
 Source codes of my personal website powered by Gatsby.js
 
