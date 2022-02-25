@@ -66,11 +66,6 @@ const IndexPage: React.FC = () => {
               Full stack Typescript and Go developer. Mostly writing UI's with React & Vue, creating
               mobile apps with React Native and developing scalable backends with NodeJS & Go.
             </p>
-            {/* <p className="summary">
-              I'm a self-taught Full (MERN) Stack Developer -who is highly enthusiastic about web
-              technologies- a hobbyist Game Developer, amateur Videographer & Photographer
-              -designer-, Freelancer and a Business Informatics student.
-            </p> */}
           </div>
           <div className="contact">
             <a className="button" href="mailto:ocengiz97@hotmail.com">

@@ -6,4 +6,6 @@ Source codes of my personal website using Gatsby.js powered by Typescript.
 
 ## License
 
+Copyright (c) 2018 Ömürcan Cengiz
+
 This project is [MIT licensed](http://opensource.org/licenses/MIT).
