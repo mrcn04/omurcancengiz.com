@@ -1,6 +1,6 @@
 ## omurcancengiz.com
 
-Source codes of my personal website using Gatsby.js with powering Typescript.
+Source codes of my personal website using Gatsby.js powered by Typescript.
 
 [![License](https://img.shields.io/github/license/thenewboston-developers/website)](http://opensource.org/licenses/MIT)
 
