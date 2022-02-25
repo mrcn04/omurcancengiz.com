@@ -211,6 +211,9 @@ html {
   .contact {
     width: 100%;
   }
+  .description {
+    font-size: 1.2rem;
+  }
 }
 
 @media screen and (min-width: 800px) {
