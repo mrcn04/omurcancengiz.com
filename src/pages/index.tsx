@@ -1,30 +1,88 @@
 import * as React from 'react'
-import { Link } from 'gatsby'
-import { StaticImage } from 'gatsby-plugin-image'
 
 import Layout from '../components/layout'
 import Seo from '../components/seo'
+import SocialLinks from '../components/socials'
 
-const IndexPage = () => (
-  <Layout>
-    <Seo title="Home" />
-    <h1>Hi people</h1>
-    <p>Welcome to your new Gatsby site.</p>
-    <p>Now go build something great.</p>
-    <StaticImage
-      src="../images/gatsby-astronaut.png"
-      width={300}
-      quality={95}
-      formats={['auto', 'webp', 'avif']}
-      alt="A Gatsby astronaut"
-      style={{ marginBottom: `1.45rem` }}
-    />
-    <p>
-      <Link to="/using-typescript/">Go to "Using TypeScript"</Link> <br />
-      <Link to="/using-ssr">Go to "Using SSR"</Link> <br />
-      <Link to="/using-dsg">Go to "Using DSG"</Link>
-    </p>
-  </Layout>
-)
+import '../css/main.css'
+import '../css/animations.css'
+import image from '../images/omur-1.png'
+import wallpaper from '../images/bg3.jpg'
+
+type IDocumentType = HTMLElement | HTMLMediaElement | null
+
+const IndexPage: React.FC = () => {
+  function loadImage(id: string, targetId?: string) {
+    let el: HTMLMediaElement = document.getElementById(id) as HTMLMediaElement
+    let targetEl: IDocumentType = targetId ? document.getElementById(targetId) : el
+    let imageToLoad: string
+
+    if (el?.dataset.image) {
+      imageToLoad = el?.dataset.image
+    } else if (!el?.currentSrc) {
+      imageToLoad = el?.src
+    } else {
+      imageToLoad = el?.currentSrc
+    }
+
+    if (imageToLoad) {
+      let img = new Image()
+      img.src = imageToLoad
+      img.onload = () => {
+        targetEl!.classList.add('is-loaded')
+      }
+    }
+  }
+
+  React.useEffect((): void => {
+    loadImage('wallpaper')
+    loadImage('pictureImage', 'picture')
+  }, [])
+
+  return (
+    <Layout>
+      <Seo title="Ömürcan Cengiz" />
+      <div id="wallpaper" className="wallpaper" data-image={wallpaper} />
+      <div className="content">
+        <aside className="side">
+          <figure id="picture" className="picture">
+            <div className="picture-shadow"></div>
+            <img
+              id="pictureImage"
+              className="picture-image"
+              src={image}
+              alt="Portrait of Ömürcan Cengiz"
+              width="320"
+              height="320"
+            />
+          </figure>
+        </aside>
+        <main className="about">
+          <h1 className="name">Hi, I'm Ömürcan Cengiz</h1>
+          <p className="job">Software Developer</p>
+          <hr className="hr" />
+          <div className="description">
+            <p className="summary">
+              Full stack Typescript and Go developer. Mostly writing UI's with React & Vue, creating
+              mobile apps with React Native and developing scalable backends with NodeJS & Go.
+            </p>
+            {/* <p className="summary">
+              I'm a self-taught Full (MERN) Stack Developer -who is highly enthusiastic about web
+              technologies- a hobbyist Game Developer, amateur Videographer & Photographer
+              -designer-, Freelancer and a Business Informatics student.
+            </p> */}
+          </div>
+          <div className="contact">
+            <a className="button" href="mailto:ocengiz97@hotmail.com">
+              {' '}
+              Get in touch{' '}
+            </a>
+            <SocialLinks />
+          </div>
+        </main>
+      </div>
+    </Layout>
+  )
+}
 
 export default IndexPage
