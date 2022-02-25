@@ -7,7 +7,7 @@ import SocialLinks from '../components/socials'
 import '../css/main.css'
 import '../css/animations.css'
 import image from '../images/omur-1.png'
-import wallpaper from '../images/bg3.jpg'
+import wallpaper from '../images/omur-bg.png'
 
 type IDocumentType = HTMLElement | HTMLMediaElement | null
 
