@@ -1,0 +1,184 @@
+/* css animations */
+
+@keyframes bounceIn {
+  from {
+    opacity: 0;
+    transform: scale(0.5);
+  }
+
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+@keyframes fillUp {
+  from {
+    transform: scaleX(0);
+  }
+
+  to {
+    transform: scaleX(1);
+  }
+}
+
+@keyframes picImage {
+  from {
+    opacity: 0;
+    transform: scale(1.2) translateY(-1rem);
+  }
+
+  to {
+    opacity: 1;
+    transform: scale(1) translateY(0);
+  }
+}
+
+@keyframes picShadow {
+  from {
+    opacity: 0;
+    transform: scale(1.2) translateY(4rem);
+  }
+
+  to {
+    opacity: 1;
+    transform: scale(1.1) translateY(0);
+  }
+}
+
+@keyframes slideDown {
+  from {
+    opacity: 0;
+    transform: translateY(-1rem);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes slideUp {
+  from {
+    opacity: 0;
+    transform: translateY(1rem);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes zoomOut {
+  from {
+    opacity: 0;
+    transform: scale(1.05);
+  }
+
+  to {
+    opacity: 0.6;
+    transform: scale(1);
+  }
+}
+
+.wallpaper,
+.picture-shadow,
+.picture-image,
+.name,
+.job,
+.hr,
+.description,
+.contact,
+.social li {
+  animation-duration: 1.5s;
+  animation-timing-function: cubic-bezier(0, 0.5, 0, 1);
+  animation-fill-mode: both;
+}
+
+.wallpaper {
+  animation-name: zoomOut;
+}
+.picture {
+  animation-name: dropIn;
+}
+
+.contact {
+  animation-name: bounceIn;
+}
+
+.picture-shadow,
+.picture-image {
+  animation-duration: 750ms;
+  animation-timing-function: cubic-bezier(0, 0.5, 0.25, 1.25);
+}
+
+.wallpaper,
+.picture-shadow,
+.picture-image {
+  opacity: 0;
+}
+
+.wallpaper {
+  animation-timing-function: ease-out;
+}
+.wallpaper.is-loaded {
+  animation-delay: 100ms;
+  animation-name: zoomOut;
+}
+.picture.is-loaded .picture-shadow {
+  animation-name: picShadow;
+}
+.picture.is-loaded .picture-image {
+  animation-name: picImage;
+}
+.name {
+  animation-name: slideDown;
+}
+.job {
+  animation-name: slideUp;
+}
+.hr {
+  animation-name: fillUp;
+}
+.description {
+  animation-name: slideUp;
+}
+
+.social li {
+  animation-duration: 500ms;
+  animation-name: slideUp;
+  animation-timing-function: cubic-bezier(0.5, 0, 0.5, 1.5);
+}
+
+.name {
+  animation-delay: 100ms;
+}
+.job {
+  animation-delay: 200ms;
+}
+.hr {
+  animation-delay: 300ms;
+}
+.description {
+  animation-delay: 400ms;
+}
+.picture-image {
+  animation-delay: 500ms;
+}
+.picture-shadow {
+  animation-delay: 600ms;
+}
+.contact {
+  animation-delay: 700ms;
+}
+
+.social li:nth-child(1) {
+  animation-delay: 900ms;
+}
+.social li:nth-child(2) {
+  animation-delay: 1.1s;
+}
+.social li:nth-child(3) {
+  animation-delay: 1.3s;
+}

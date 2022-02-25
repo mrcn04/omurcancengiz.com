@@ -1,0 +1,235 @@
+/* 1st part */
+
+html {
+  background-color: #161618;
+  background-image: linear-gradient(to bottom right, #211f30, #161618);
+  color: #fff;
+  font-family: 'Quicksand', sans-serif;
+  font-size: 14px;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  line-height: 1.5;
+  min-height: 100vh;
+  min-width: 300px;
+  overflow-x: hidden;
+  text-shadow: 0 3px 5px rgba(0, 0, 0, 0.2);
+}
+
+/* 2nd part | wallpaper part 1 | Shared */
+
+.wallpaper,
+.picture-shadow,
+.picture-image {
+  display: block;
+  height: 100%;
+  left: 0;
+  top: 0;
+  width: 100%;
+}
+
+.job,
+.button {
+  font-family: 'Montserrat', 'Quicksand', sans-serif;
+  letter-spacing: 0.3em;
+  text-transform: uppercase;
+}
+
+.button,
+.social a {
+  text-decoration: none;
+  transform-origin: center;
+  transition-duration: 200ms;
+}
+
+/* 3rd part | wallpaper part 2 | specific */
+
+.wallpaper {
+  background-image: url('../images/omur-bg.png');
+  background-position: center;
+  background-size: cover;
+  opacity: 0.4;
+  position: fixed;
+}
+
+.content {
+  display: flex;
+  position: relative;
+  align-items: center;
+  justify-content: space-between;
+  min-height: 100vh;
+  color: #fff;
+}
+
+.side {
+  max-height: 20rem;
+  max-width: 20rem;
+}
+
+.about {
+  max-width: 40rem;
+}
+
+.picture {
+  padding-top: 100%;
+  position: relative;
+  width: 100%;
+}
+
+.picture-shadow {
+  border-radius: 9198px;
+  background-image: radial-gradient(#000 0%, rgba(0, 0, 0, 0) 70%);
+  position: absolute;
+  top: 10%;
+}
+
+.picture-image {
+  border-radius: 9198px;
+  position: absolute;
+}
+
+.name {
+  font-size: 2.25rem;
+  line-height: 1.125;
+  margin-bottom: 0.5rem;
+  font-weight: 500;
+  font-family: 'Quicksand', sans-serif;
+}
+
+.job {
+  color: #ffe479;
+  font-size: 0.75rem;
+}
+
+.hr {
+  background-color: #098fe7;
+  border: none;
+  content: '';
+  height: 1px;
+  margin-bottom: 1.5rem;
+  margin-top: 1.5rem;
+  transform-origin: center left;
+  width: 4rem;
+}
+
+.description {
+  font-size: 1.3rem;
+  font-family: 'Quicksand', sans-serif;
+}
+
+.contact {
+  display: inline-block;
+  margin-top: 1rem;
+  vertical-align: top;
+}
+
+.button {
+  background-color: #1f1f22;
+  border: 1px solid #ffe479;
+  border-radius: 9198px;
+  box-shadow: 0 1rem 1rem rgba(0, 0, 0, 0.2);
+  color: #ffe479;
+  display: inline-block;
+  font-size: 0.875rem;
+  line-height: 1;
+  padding: 1.25em 2em;
+  margin-bottom: 1rem;
+  text-shadow: none;
+  transition-property: box-shadow, transform;
+  user-select: none;
+  vertical-align: top;
+  white-space: nowrap;
+  will-change: box-shadow, transform;
+}
+
+.button:hover {
+  box-shadow: 0 1.5rem 3rem rgba(0, 0, 0, 0.2);
+  transform: scale(1.02) translateY(-4px);
+}
+
+.button:active {
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.3);
+  transform: scale(0.98) translateY(-2px);
+}
+
+.social {
+  display: flex;
+  margin-top: 1rem;
+  list-style-type: none;
+  margin-left: 0.5rem !important;
+}
+
+.social li {
+  height: 2rem;
+  margin-right: 0.5rem;
+  text-align: center;
+  width: 2rem;
+}
+
+.social a {
+  align-items: center;
+  display: flex;
+  font-size: 1.5rem;
+  height: 2rem;
+  justify-content: center;
+  opacity: 0.5;
+  transition-property: opacity, transform;
+  width: 2rem;
+  will-change: opacity, transform;
+  color: #fff;
+}
+
+.social a:hover {
+  opacity: 1;
+  transform: scale(1.25);
+}
+
+.social a:active {
+  opacity: 1;
+  transform: scale(1.1);
+}
+
+/* 4th part Responsiveness */
+
+@media screen and (max-width: 799px) {
+  .content {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 5rem 2rem;
+  }
+  .side {
+    margin-bottom: 3rem;
+    width: 90%;
+  }
+  .name {
+    font-size: 1.5rem;
+  }
+  .about {
+    padding-left: 0.8rem;
+  }
+  .contact {
+    width: 100%;
+  }
+}
+
+@media screen and (min-width: 800px) {
+  .content {
+    align-items: center;
+    padding: 0 8rem;
+    margin: 0 auto;
+    max-width: 1600px;
+  }
+  .side {
+    flex-grow: 0;
+    flex-shrink: 0;
+    height: 20rem;
+    margin-left: 1rem;
+    order: 2;
+    width: 20rem;
+  }
+  .about {
+    flex-grow: 1;
+    flex-shrink: 1;
+    margin-top: 2rem;
+  }
+}

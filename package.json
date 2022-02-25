@@ -1,12 +1,16 @@
 {
-  "name": "gatsby-starter-default",
+  "name": "omurcancengiz.com",
   "private": true,
-  "description": "A simple starter to get up and developing quickly with Gatsby",
-  "version": "0.1.0",
-  "author": "Kyle Mathews <mathews.kyle@gmail.com>",
+  "description": "Source code of my personal website",
+  "version": "2.0.0",
+  "author": "Ömürcan Cengiz",
   "dependencies": {
+    "@types/react": "^17.0.39",
+    "@types/react-dom": "^17.0.11",
+    "@types/react-helmet": "^6.1.5",
     "gatsby": "^4.7.2",
     "gatsby-plugin-gatsby-cloud": "^4.7.0",
+    "gatsby-plugin-google-fonts": "^1.0.1",
     "gatsby-plugin-image": "^2.7.0",
     "gatsby-plugin-manifest": "^4.7.0",
     "gatsby-plugin-offline": "^5.7.0",
@@ -23,9 +27,19 @@
     "prettier": "^2.5.1"
   },
   "keywords": [
-    "gatsby"
+    "ömürcan",
+    "cengiz",
+    "ömürcan cengiz",
+    "omurcan",
+    "cengiz",
+    "omurcan cengiz",
+    "ömürcancengiz",
+    "omurcancengiz",
+    "software developer",
+    "fullstack",
+    "developer"
   ],
-  "license": "0BSD",
+  "license": "MIT",
   "scripts": {
     "build": "gatsby build",
     "develop": "gatsby develop",
@@ -37,9 +51,9 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/gatsbyjs/gatsby-starter-default"
+    "url": "https://github.com/mrcn04/omurcancengiz.com"
   },
   "bugs": {
-    "url": "https://github.com/gatsbyjs/gatsby/issues"
+    "url": "https://github.com/mrcn04/omurcancengiz.com/issues"
   }
 }
