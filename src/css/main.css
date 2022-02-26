@@ -201,6 +201,8 @@ html {
   .side {
     margin-bottom: 3rem;
     width: 90%;
+    max-width: 18rem;
+    max-height: 18rem;
   }
   .name {
     font-size: 1.5rem;

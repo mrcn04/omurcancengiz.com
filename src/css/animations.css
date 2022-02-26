@@ -88,12 +88,16 @@
 .name,
 .job,
 .hr,
-.description,
 .contact,
+.description,
 .social li {
   animation-duration: 1.5s;
   animation-timing-function: cubic-bezier(0, 0.5, 0, 1);
   animation-fill-mode: both;
+}
+
+.contact {
+  animation-duration: 1s;
 }
 
 .wallpaper {
