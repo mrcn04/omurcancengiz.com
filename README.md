@@ -10,8 +10,6 @@ Source codes of my personal website using Gatsby.js powered by Typescript.
 
 ![image description](./src/images/lighthouse-scores.gif)
 
-This project is [MIT licensed](http://opensource.org/licenses/MIT).
-
 ## License
 
 This project is [MIT licensed](http://opensource.org/licenses/MIT).
