@@ -1,4 +1,12 @@
-### Version 2.0.0
+### Version 2.0.2
+
+Background type and color change
+
+### Version 2.0.1
+
+Context size adjustments, Animation fixes
+
+## Version 2.0.0
 
 Recreated the app with Gatsby.js and changed the design.
 
