@@ -44,7 +44,7 @@ html {
 /* 3rd part | wallpaper part 2 | specific */
 
 .wallpaper {
-  background-image: url('../images/omur-bg.png');
+  background-image: url('../images/omur-bg.webp');
   background-position: center;
   background-size: cover;
   opacity: 0.4;
