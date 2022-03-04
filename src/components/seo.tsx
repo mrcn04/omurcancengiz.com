@@ -28,7 +28,8 @@ function Seo({ description = '', lang = 'en', meta = [], title }: ISeoProps) {
 
   const metaDescription: string = description || site.siteMetadata.description
   const defaultTitle: string = site.siteMetadata?.title
-  const previewImage: string = `https://www.omurcancengiz.com/${wallpaperPng || wallpaperWebp}`
+  const previewImagePng: string = `https://www.omurcancengiz.com/${wallpaperPng}`
+  const previewImageWebp: string = `https://www.omurcancengiz.com/${wallpaperWebp}`
 
   return (
     <Helmet
@@ -65,11 +66,11 @@ function Seo({ description = '', lang = 'en', meta = [], title }: ISeoProps) {
         {
           property: `og:image`,
           name: 'image',
-          content: previewImage,
+          content: previewImagePng || previewImageWebp,
         },
         {
           property: `og:image:secure_url`,
-          content: previewImage,
+          content: previewImagePng || previewImageWebp,
         },
         {
           name: `twitter:card`,
@@ -77,7 +78,7 @@ function Seo({ description = '', lang = 'en', meta = [], title }: ISeoProps) {
         },
         {
           name: `twitter:image`,
-          content: previewImage,
+          content: previewImagePng || previewImageWebp,
         },
         {
           name: `twitter:creator`,
