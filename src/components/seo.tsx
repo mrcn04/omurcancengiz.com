@@ -72,7 +72,11 @@ function Seo({ description = '', lang = 'en', meta = [], title }: ISeoProps) {
         },
         {
           name: `twitter:card`,
-          content: `summary`,
+          content: `summary_large_image`,
+        },
+        {
+          name: `twitter:image`,
+          content: previewImage,
         },
         {
           name: `twitter:creator`,
@@ -85,10 +89,6 @@ function Seo({ description = '', lang = 'en', meta = [], title }: ISeoProps) {
         {
           name: `twitter:description`,
           content: metaDescription,
-        },
-        {
-          name: `twitter:image`,
-          content: previewImage,
         },
       ].concat(meta)}
     >
