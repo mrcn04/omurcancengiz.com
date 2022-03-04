@@ -1,8 +1,7 @@
 import * as React from 'react'
 import { Helmet } from 'react-helmet'
 import { useStaticQuery, graphql } from 'gatsby'
-import wallpaperPng from '../images/omur-bg.png'
-import wallpaperWebp from '../images/omur-bg.webp'
+import wallpaper from '../images/omur-bg.png'
 
 interface ISeoProps {
   description?: string
@@ -28,8 +27,7 @@ function Seo({ description = '', lang = 'en', meta = [], title }: ISeoProps) {
 
   const metaDescription: string = description || site.siteMetadata.description
   const defaultTitle: string = site.siteMetadata?.title
-  const previewImagePng: string = `https://www.omurcancengiz.com/${wallpaperPng}`
-  const previewImageWebp: string = `https://www.omurcancengiz.com/${wallpaperWebp}`
+  const previewImage: string = `https://www.omurcancengiz.com/${wallpaper}`
 
   return (
     <Helmet
@@ -66,19 +64,15 @@ function Seo({ description = '', lang = 'en', meta = [], title }: ISeoProps) {
         {
           property: `og:image`,
           name: 'image',
-          content: previewImagePng || previewImageWebp,
+          content: previewImage,
         },
         {
           property: `og:image:secure_url`,
-          content: previewImagePng || previewImageWebp,
+          content: previewImage,
         },
         {
           name: `twitter:card`,
           content: `summary_large_image`,
-        },
-        {
-          name: `twitter:image`,
-          content: previewImagePng || previewImageWebp,
         },
         {
           name: `twitter:creator`,
