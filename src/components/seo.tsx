@@ -27,7 +27,7 @@ function Seo({ description = '', lang = 'en', meta = [], title }: ISeoProps) {
 
   const metaDescription: string = description || site.siteMetadata.description
   const defaultTitle: string = site.siteMetadata?.title
-  const previewImage: string = `${site.siteMetadata.siteUrl}/${wallpaper}`
+  const previewImage: string = `${wallpaper}`
 
   return (
     <Helmet
