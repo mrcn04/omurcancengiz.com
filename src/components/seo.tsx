@@ -1,7 +1,7 @@
 import * as React from 'react'
 import { Helmet } from 'react-helmet'
 import { useStaticQuery, graphql } from 'gatsby'
-import wallpaper from '../images/omur-bg.webp'
+import wallpaper from '../images/omur-bg.png'
 
 interface ISeoProps {
   description?: string
