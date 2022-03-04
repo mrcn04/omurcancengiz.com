@@ -7,7 +7,7 @@ const SocialLinks: React.FC = () => {
       <ul className="social" style={{ marginBottom: 0 }}>
         {SOCIAL_LINKS.map((social: ISocials) => (
           <li key={social.id}>
-            <a href={social.url} target="_blank">
+            <a href={social.url} id={social.name} target="_blank">
               <i className={social.icon} />
             </a>
           </li>

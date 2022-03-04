@@ -10,7 +10,7 @@ interface ISeoProps {
   title: string
 }
 
-function Seo({ description = '', lang = 'lang', meta = [], title }: ISeoProps) {
+function Seo({ description = '', lang = 'en', meta = [], title }: ISeoProps) {
   const { site }: any = useStaticQuery(
     graphql`
       query {
