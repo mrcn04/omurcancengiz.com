@@ -1,6 +1,7 @@
 import * as React from 'react'
 import { Helmet } from 'react-helmet'
 import { useStaticQuery, graphql } from 'gatsby'
+import wallpaper from '../images/omur-bg.webp'
 
 interface ISeoProps {
   description?: string
@@ -50,6 +51,10 @@ function Seo({ description = '', lang = 'lang', meta = [], title }: ISeoProps) {
         {
           property: `og:type`,
           content: `website`,
+        },
+        {
+          property: `og:image`,
+          content: wallpaper,
         },
         {
           name: `twitter:card`,
