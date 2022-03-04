@@ -1,7 +1,7 @@
 import * as React from 'react'
 import { Helmet } from 'react-helmet'
 import { useStaticQuery, graphql } from 'gatsby'
-import wallpaper from '../images/omur-bg.webp'
+import wallpaper from '../images/omur-bg.png'
 
 interface ISeoProps {
   description?: string
@@ -39,7 +39,7 @@ function Seo({ description = '', lang = 'lang', meta = [], title }: ISeoProps) {
       meta={[
         {
           property: `author`,
-          content: site.siteMetadata?.author || ``,
+          content: site.siteMetadata?.author,
         },
         {
           name: `description`,
@@ -52,6 +52,10 @@ function Seo({ description = '', lang = 'lang', meta = [], title }: ISeoProps) {
         {
           property: `og:description`,
           content: metaDescription,
+        },
+        {
+          property: `og:url`,
+          content: `https://www.omurcancengiz.com`,
         },
         {
           property: `og:type`,
