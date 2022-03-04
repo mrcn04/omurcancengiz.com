@@ -38,6 +38,10 @@ function Seo({ description = '', lang = 'lang', meta = [], title }: ISeoProps) {
       titleTemplate={defaultTitle ? `%s | Software Developer` : undefined}
       meta={[
         {
+          property: `author`,
+          content: site.siteMetadata?.author || ``,
+        },
+        {
           name: `description`,
           content: metaDescription,
         },
