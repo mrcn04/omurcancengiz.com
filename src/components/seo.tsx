@@ -17,6 +17,7 @@ function Seo({ description = '', lang = 'en', meta = [], title }: ISeoProps) {
             title
             description
             author
+            previewImage
           }
         }
       }
@@ -25,6 +26,8 @@ function Seo({ description = '', lang = 'en', meta = [], title }: ISeoProps) {
 
   const metaDescription: string = description || site.siteMetadata.description
   const defaultTitle: string = site.siteMetadata?.title
+
+  console.log(site.siteMetadata.previewImage)
 
   return (
     <Helmet
@@ -61,11 +64,11 @@ function Seo({ description = '', lang = 'en', meta = [], title }: ISeoProps) {
         {
           property: `og:image`,
           name: 'image',
-          content: site.siteMetadata?.previewImage,
+          content: site.siteMetadata.previewImage,
         },
         {
           property: `og:image:secure_url`,
-          content: site.siteMetadata?.previewImage,
+          content: site.siteMetadata.previewImage,
         },
         {
           name: `twitter:card`,
