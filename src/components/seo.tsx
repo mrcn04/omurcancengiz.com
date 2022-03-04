@@ -1,7 +1,8 @@
 import * as React from 'react'
 import { Helmet } from 'react-helmet'
 import { useStaticQuery, graphql } from 'gatsby'
-import wallpaper from '../images/omur-bg.png'
+import wallpaperPng from '../images/omur-bg.png'
+import wallpaperWebp from '../images/omur-bg.webp'
 
 interface ISeoProps {
   description?: string
@@ -27,7 +28,7 @@ function Seo({ description = '', lang = 'en', meta = [], title }: ISeoProps) {
 
   const metaDescription: string = description || site.siteMetadata.description
   const defaultTitle: string = site.siteMetadata?.title
-  const previewImage: string = `https://www.omurcancengiz.com/${wallpaper}`
+  const previewImage: string = `https://www.omurcancengiz.com/${wallpaperPng || wallpaperWebp}`
 
   return (
     <Helmet
