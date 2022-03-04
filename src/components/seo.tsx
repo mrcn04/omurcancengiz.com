@@ -57,6 +57,10 @@ function Seo({ description = '', lang = 'lang', meta = [], title }: ISeoProps) {
           content: `https://www.omurcancengiz.com/${wallpaper}`,
         },
         {
+          property: `og:image:secure_url`,
+          content: `https://www.omurcancengiz.com/${wallpaper}`,
+        },
+        {
           name: `twitter:card`,
           content: `summary`,
         },
