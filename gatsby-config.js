@@ -4,7 +4,6 @@ module.exports = {
     description: `Ömürcan Cengiz, Fullstack Developer`,
     author: `Ömürcan Cengiz`,
     siteUrl: `https://www.omurcancengiz.com`,
-    previewImage: `${__dirname}/src/images/omur-bg.png`,
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
