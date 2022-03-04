@@ -38,7 +38,7 @@ function Seo({ description = '', lang = 'lang', meta = [], title }: ISeoProps) {
       titleTemplate={defaultTitle ? `%s | Software Developer` : undefined}
       meta={[
         {
-          property: `author`,
+          name: `author`,
           content: site.siteMetadata?.author,
         },
         {
