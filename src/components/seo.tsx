@@ -21,7 +21,6 @@ function Seo({ description = '', lang = 'en', meta = [], title }: ISeoProps) {
             author
             siteUrl
             keywords
-            previewImage
           }
         }
       }
