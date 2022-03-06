@@ -28,8 +28,8 @@ function Seo({ description = '', lang = 'en', meta = [], title }: ISeoProps) {
 
   const metaDescription: string = description || site.siteMetadata.description
   const defaultTitle: string = site.siteMetadata?.title
-  const keywords: string = site.siteMetadata.keywords
-  const previewImage: string = site.siteMetadata.previewImage
+  const keywords: Array<string> = site.siteMetadata.keywords
+  const previewImage: string = `${site.siteMetadata.siteUrl}${site.siteMetadata.previewImage}`
 
   return (
     <Helmet
@@ -49,7 +49,7 @@ function Seo({ description = '', lang = 'en', meta = [], title }: ISeoProps) {
         },
         {
           name: `keywords`,
-          content: keywords,
+          content: keywords.join(','),
         },
         {
           property: `og:title`,
@@ -68,13 +68,12 @@ function Seo({ description = '', lang = 'en', meta = [], title }: ISeoProps) {
           content: `website`,
         },
         {
-          name: 'image',
           property: `og:image`,
           content: previewImage,
         },
         {
           name: `twitter:card`,
-          content: `summary`,
+          content: `summary_large_image`,
         },
         {
           name: `twitter:image`,
