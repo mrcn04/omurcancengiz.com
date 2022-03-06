@@ -36,6 +36,7 @@ function Seo({ description = '', lang = 'en', meta = [], title }: ISeoProps) {
     <Helmet
       htmlAttributes={{
         lang,
+        prefix: 'og: http://ogp.me/ns#',
       }}
       title={title}
       titleTemplate={defaultTitle ? `%s | Software Developer` : undefined}
