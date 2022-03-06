@@ -5,7 +5,6 @@ module.exports = {
     author: `Ömürcan Cengiz`,
     siteUrl: `https://www.omurcancengiz.com`,
     keywords: `ömürcan, cengiz, ömürcan cengiz, omurcan, cengiz, omurcan cengiz, ömürcancengiz, omurcancengiz, software developer, fullstack, developer`,
-    previewImage: `src/images/omur-bg.png`,
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
