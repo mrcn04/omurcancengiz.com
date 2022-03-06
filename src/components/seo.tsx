@@ -28,7 +28,7 @@ function Seo({ description = '', lang = 'en', meta = [], title }: ISeoProps) {
 
   const metaDescription: string = description || site.siteMetadata.description
   const defaultTitle: string = site.siteMetadata?.title
-  const keywords: Array<string> = site.siteMetadata.keywords
+  const keywords: Array<string> | string = site.siteMetadata.keywords
   const previewImage: string = `${site.siteMetadata.siteUrl}${site.siteMetadata.previewImage}`
 
   return (
@@ -49,7 +49,7 @@ function Seo({ description = '', lang = 'en', meta = [], title }: ISeoProps) {
         },
         {
           name: `keywords`,
-          content: keywords.join(','),
+          content: typeof keywords === 'string' ? keywords : keywords.join(','),
         },
         {
           property: `og:title`,
