@@ -1,7 +1,6 @@
 import * as React from 'react'
 import { Helmet } from 'react-helmet'
 import { useStaticQuery, graphql } from 'gatsby'
-import wallpaper from '../images/omur-bg.png'
 interface ISeoProps {
   description?: string
   lang?: string
@@ -19,6 +18,8 @@ function Seo({ description = '', lang = 'en', meta = [], title }: ISeoProps) {
             description
             author
             siteUrl
+            keywords
+            previewImage
           }
         }
       }
@@ -27,7 +28,8 @@ function Seo({ description = '', lang = 'en', meta = [], title }: ISeoProps) {
 
   const metaDescription: string = description || site.siteMetadata.description
   const defaultTitle: string = site.siteMetadata?.title
-  const previewImage: string = `${site.siteMetadata.siteUrl}/${wallpaper}`
+  const keywords: string = site.siteMetadata.keywords
+  const previewImage: string = `${site.siteMetadata.siteUrl}/${site.siteMetadata.previewImage}`
 
   return (
     <Helmet
@@ -44,6 +46,10 @@ function Seo({ description = '', lang = 'en', meta = [], title }: ISeoProps) {
         {
           name: `description`,
           content: metaDescription,
+        },
+        {
+          name: `keywords`,
+          content: keywords,
         },
         {
           property: `og:title`,
@@ -68,7 +74,11 @@ function Seo({ description = '', lang = 'en', meta = [], title }: ISeoProps) {
         },
         {
           name: `twitter:card`,
-          content: `summary_large_image`,
+          content: `summary`,
+        },
+        {
+          name: `twitter:image`,
+          content: previewImage,
         },
         {
           name: `twitter:creator`,
