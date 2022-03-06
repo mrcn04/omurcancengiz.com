@@ -73,6 +73,10 @@ function Seo({ description = '', lang = 'en', meta = [], title }: ISeoProps) {
           content: previewImage,
         },
         {
+          property: `image`,
+          content: previewImage,
+        },
+        {
           name: `twitter:card`,
           content: `summary_large_image`,
         },
