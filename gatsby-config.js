@@ -21,8 +21,8 @@ module.exports = {
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: `omurcancengiz.com`,
-        short_name: `starter`,
+        name: `Ömürcan Cengiz | Software Developer`,
+        short_name: `Ömürcan Cengiz`,
         start_url: `/`,
         background_color: `#161618`,
         display: `minimal-ui`,
