@@ -1,3 +1,7 @@
+### Version 2.1.1
+
+minor mobile view adjustments
+
 ### Version 2.1
 
 README update and mobile view adjustments
