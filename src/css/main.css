@@ -1,5 +1,9 @@
 /* 1st part */
 
+body {
+  margin: 0;
+}
+
 html {
   background-color: #161618;
   background-image: linear-gradient(to right, #1f1e2b, #161618);
@@ -196,7 +200,7 @@ html {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding: 2rem;
+    padding: 0.5rem 2rem;
     text-align: center;
   }
   .side {
@@ -219,6 +223,10 @@ html {
   }
   .social {
     justify-content: center;
+  }
+  .wallpaper {
+    background-image: none;
+    background-color: #1C1C20;
   }
 }
 
