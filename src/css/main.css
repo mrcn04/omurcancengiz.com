@@ -196,7 +196,8 @@ html {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding: 5rem 2rem;
+    padding: 2rem;
+    text-align: center;
   }
   .side {
     margin-bottom: 3rem;
@@ -207,14 +208,17 @@ html {
   .name {
     font-size: 1.5rem;
   }
-  .about {
-    padding-left: 0.8rem;
-  }
   .contact {
     width: 100%;
   }
   .description {
     font-size: 1.2rem;
+  }
+  .hr {
+    margin: 1.5rem auto;
+  }
+  .social {
+    justify-content: center;
   }
 }
 
