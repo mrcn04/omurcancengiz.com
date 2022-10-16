@@ -2,7 +2,7 @@
   "name": "omurcancengiz.com",
   "private": true,
   "description": "Source code of my personal website",
-  "version": "2.0.2",
+  "version": "2.1",
   "author": "Ömürcan Cengiz",
   "dependencies": {
     "@types/react": "^17.0.39",

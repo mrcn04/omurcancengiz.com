@@ -1,3 +1,7 @@
+### Version 2.1
+
+README update and mobile view adjustments
+
 ### Version 2.0.2
 
 Background type and color change
