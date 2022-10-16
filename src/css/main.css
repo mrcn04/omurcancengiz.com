@@ -196,14 +196,14 @@ html {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding: 2rem;
+    padding: 0.5rem 2rem;
     text-align: center;
   }
   .side {
     margin-bottom: 3rem;
     width: 90%;
-    max-width: 18rem;
-    max-height: 18rem;
+    max-width: 16rem;
+    max-height: 16rem;
   }
   .name {
     font-size: 1.5rem;
