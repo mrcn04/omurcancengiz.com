@@ -196,7 +196,7 @@ html {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding: 0.5rem 2rem;
+    padding: 2rem;
     text-align: center;
   }
   .side {
