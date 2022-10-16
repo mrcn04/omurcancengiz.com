@@ -26,7 +26,7 @@ npm run develop
 
 ### Possible Errors
 
-When installing for the first time, if you get an ERROR #98123, deleted your `package-lock.json` file, `.cache` folder, `node_modules` folder and re-run the `npm install` command.
+When installing for the first time, if you get an **ERROR #98123**, deleted your `package-lock.json` file, `.cache` folder, `node_modules` folder and re-run the `npm install` command.
 
 ## License
 
