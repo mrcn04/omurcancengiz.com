@@ -1,5 +1,8 @@
 ### Version 2.2.0
 
+- Big context & UI changes
+- Huge performance boost
+
 ### Version 2.1.1
 
 minor mobile view adjustments

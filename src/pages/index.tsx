@@ -7,7 +7,6 @@ import SocialLinks from '../components/socials'
 import '../css/main.css'
 import '../css/animations.css'
 import image from '../images/omur3.webp'
-import wallpaper from '../images/omur-bg.webp'
 type IDocumentType = HTMLElement | HTMLMediaElement | null
 
 const IndexPage: React.FC = () => {
@@ -41,7 +40,7 @@ const IndexPage: React.FC = () => {
   return (
     <Layout>
       <Seo title="Ömürcan Cengiz" />
-      <div id="wallpaper" className="wallpaper" data-image={wallpaper} />
+      {/* <div id="wallpaper" className="wallpaper" data-image={wallpaper} /> */}
       <div className="content">
         <aside className="side">
           <figure id="picture" className="picture">
