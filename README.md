@@ -32,4 +32,4 @@ When installing for the first time, if you get an **ERROR #98123**, deleted your
 
 This project is [MIT licensed](http://opensource.org/licenses/MIT).
 
-<sub><sup>Copyright (c) 2018 Ömürcan Cengiz</sup></sub>
+<sub><sup>Copyright (c) 2018-2023 Ömürcan Cengiz</sup></sub>
