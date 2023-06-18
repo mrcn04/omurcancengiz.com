@@ -36,5 +36,14 @@ module.exports = {
         display: 'swap',
       },
     },
+    {
+      resolve: `gatsby-plugin-google-gtag`,
+      options: {
+        trackingIds: ['G-H8G5XJM8LM'],
+        pluginConfig: {
+          head: true,
+        },
+      },
+    },
   ],
 }
