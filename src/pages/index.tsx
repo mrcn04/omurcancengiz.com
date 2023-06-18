@@ -6,9 +6,8 @@ import SocialLinks from '../components/socials'
 
 import '../css/main.css'
 import '../css/animations.css'
-import image from '../images/omur-1.png'
+import image from '../images/omur3.webp'
 import wallpaper from '../images/omur-bg.webp'
-
 type IDocumentType = HTMLElement | HTMLMediaElement | null
 
 const IndexPage: React.FC = () => {
@@ -35,7 +34,7 @@ const IndexPage: React.FC = () => {
   }
 
   React.useEffect((): void => {
-    loadImage('wallpaper')
+    // loadImage('wallpaper')
     loadImage('pictureImage', 'picture')
   }, [])
 
@@ -46,29 +45,33 @@ const IndexPage: React.FC = () => {
       <div className="content">
         <aside className="side">
           <figure id="picture" className="picture">
-            <div className="picture-shadow"></div>
+            {/* <div className="picture-shadow"></div> */}
             <img
               id="pictureImage"
               className="picture-image"
               src={image}
               alt="Portrait of Ömürcan Cengiz"
-              width="320"
-              height="320"
             />
           </figure>
         </aside>
         <main className="about">
           <h1 className="name">Hi, I'm Ömürcan Cengiz</h1>
-          <p className="job">Software Developer</p>
+          <p className="job">Founder & Developer</p>
           <hr className="hr" />
           <div className="description">
             <p className="summary">
+              C, Go, Typescript, Swift. A seasoned full stack developer with over half a decade of
+              experience. Living the irony of being an old soul while infusing my work with a
+              timeless touch. Love creating stuff that makes people's lives more efficient and less
+              annoying.
+            </p>
+            {/* <p className="summary">
               Full stack Typescript and Go developer. Mostly writing UI's with React & Vue, creating
               mobile apps with React Native and developing scalable backends with NodeJS & Go.
-            </p>
+            </p> */}
           </div>
           <div className="contact">
-            <a className="button" href="mailto:ocengiz97@hotmail.com">
+            <a className="button" href="mailto:omurccengiz@gmail.com">
               {' '}
               Get in touch{' '}
             </a>

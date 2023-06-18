@@ -2,7 +2,7 @@
 
 @keyframes bounceIn {
   from {
-    opacity: 0;
+    opacity: 0.01;
     transform: scale(0.5);
   }
 
@@ -24,19 +24,19 @@
 
 @keyframes picImage {
   from {
-    opacity: 0;
-    transform: scale(1.2) translateY(-1rem);
+    /* opacity: 0.01; */
+    transform: scale(1) translateX(20rem);
   }
 
   to {
     opacity: 1;
-    transform: scale(1) translateY(0);
+    transform: scale(1) translateX(0);
   }
 }
 
 @keyframes picShadow {
   from {
-    opacity: 0;
+    opacity: 0.01;
     transform: scale(1.2) translateY(4rem);
   }
 
@@ -48,8 +48,20 @@
 
 @keyframes slideDown {
   from {
-    opacity: 0;
+    opacity: 0.01;
     transform: translateY(-1rem);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes slideDownPicture {
+  from {
+    opacity: 0.01;
+    transform: translateY(-5rem);
   }
 
   to {
@@ -60,7 +72,7 @@
 
 @keyframes slideUp {
   from {
-    opacity: 0;
+    opacity: 0.01;
     transform: translateY(1rem);
   }
 
@@ -72,7 +84,7 @@
 
 @keyframes zoomOut {
   from {
-    opacity: 0;
+    opacity: 0.01;
     transform: scale(1.05);
   }
 
@@ -103,9 +115,6 @@
 .wallpaper {
   animation-name: zoomOut;
 }
-.picture {
-  animation-name: dropIn;
-}
 
 .contact {
   animation-name: bounceIn;
@@ -113,14 +122,14 @@
 
 .picture-shadow,
 .picture-image {
-  animation-duration: 750ms;
+  animation-duration: 1.2s;
   animation-timing-function: cubic-bezier(0, 0.5, 0.25, 1.25);
 }
 
 .wallpaper,
 .picture-shadow,
 .picture-image {
-  opacity: 0;
+  opacity: 0.01;
 }
 
 .wallpaper {
@@ -167,9 +176,9 @@
 .description {
   animation-delay: 400ms;
 }
-.picture-image {
+/* .picture-image {
   animation-delay: 500ms;
-}
+} */
 .picture-shadow {
   animation-delay: 600ms;
 }
@@ -185,4 +194,16 @@
 }
 .social li:nth-child(3) {
   animation-delay: 1.4s;
+}
+.social li:nth-child(4) {
+  animation-delay: 1.6s;
+}
+.social li:nth-child(5) {
+  animation-delay: 1.8s;
+}
+
+@media screen and (max-width: 799px) {
+  .picture.is-loaded .picture-image {
+    animation-name: slideDownPicture;
+  }
 }

@@ -1,7 +1,7 @@
 module.exports = {
   siteMetadata: {
     title: `omurcancengiz.com`,
-    description: `Ömürcan Cengiz, Fullstack Developer`,
+    description: `Ömürcan Cengiz, Founder & Developer`,
     author: `Ömürcan Cengiz`,
     siteUrl: `https://www.omurcancengiz.com`,
     keywords: `ömürcan, cengiz, ömürcan cengiz, omurcan, cengiz, omurcan cengiz, ömürcancengiz, omurcancengiz, software developer, fullstack, developer`,
@@ -21,7 +21,7 @@ module.exports = {
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: `Ömürcan Cengiz | Software Developer`,
+        name: `Ömürcan Cengiz, Founder & Developer`,
         short_name: `Ömürcan Cengiz`,
         start_url: `/`,
         background_color: `#161618`,

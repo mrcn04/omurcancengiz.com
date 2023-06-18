@@ -17,7 +17,7 @@ const UsingTypescript: React.FC<PageProps<DataProps>> = ({ data, path }) => {
 
   return (
     <Layout>
-      <Seo title="Ömürcan Cengiz, Software Developer" />
+      <Seo title="Ömürcan Cengiz, Founder & Developer" />
       <h1>Gatsby supports TypeScript by default!</h1>
       <p>
         This means that you can create and write <em>.ts/.tsx</em> files for your pages, components
