@@ -59,10 +59,9 @@ const IndexPage: React.FC = () => {
           <hr className="hr" />
           <div className="description">
             <p className="summary">
-              C, Go, Typescript, Swift. A seasoned full stack developer with over half a decade of
-              experience. Living the irony of being an old soul while infusing my work with a
-              timeless touch. Love creating stuff that makes people's lives more efficient and less
-              annoying.
+              A seasoned full stack developer with over half a decade of experience. Living the
+              irony of being an old soul while infusing my work with a timeless touch. Love creating
+              stuff that makes people's lives more efficient and less annoying.
             </p>
             {/* <p className="summary">
               Full stack Typescript and Go developer. Mostly writing UI's with React & Vue, creating
