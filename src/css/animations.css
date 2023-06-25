@@ -22,7 +22,6 @@
 
 @keyframes picImage {
   from {
-    /* opacity: 0.01; */
     transform: scale(1) translateX(20rem);
   }
 
@@ -174,9 +173,6 @@
 .description {
   animation-delay: 400ms;
 }
-/* .picture-image {
-  animation-delay: 500ms;
-} */
 .picture-shadow {
   animation-delay: 600ms;
 }

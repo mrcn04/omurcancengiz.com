@@ -6,7 +6,8 @@ import SocialLinks from '../components/socials'
 
 import '../css/main.css'
 import '../css/animations.css'
-import image from '../images/omur3.webp'
+import image from '../images/omur.webp'
+import imageMobile from '../images/omur-mobile.webp'
 type IDocumentType = HTMLElement | HTMLMediaElement | null
 
 const IndexPage: React.FC = () => {
@@ -48,8 +49,12 @@ const IndexPage: React.FC = () => {
             <img
               id="pictureImage"
               className="picture-image"
+              srcSet={`${imageMobile} 480w, ${image} 800w`}
+              sizes="(max-width: 600px) 480px, 800px"
               src={image}
               alt="Portrait of Ömürcan Cengiz"
+              width={400}
+              height={600}
             />
           </figure>
         </aside>
@@ -61,7 +66,7 @@ const IndexPage: React.FC = () => {
             <p className="summary">
               A seasoned full stack developer with over half a decade of experience. Living the
               irony of being an old soul while infusing my work with a timeless touch. Love creating
-              stuff that makes people's lives more efficient and less annoying.
+              stuff that makes people's lives more creative and less annoying.
             </p>
             {/* <p className="summary">
               Full stack Typescript and Go developer. Mostly writing UI's with React & Vue, creating

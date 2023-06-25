@@ -91,7 +91,6 @@ html {
   line-height: 1.125;
   margin-bottom: 0.5rem;
   font-weight: 500;
-  font-family: 'Quicksand', sans-serif;
 }
 
 .job {
@@ -111,7 +110,7 @@ html {
 
 .description {
   font-size: 1.3rem;
-  font-family: 'Quicksand', sans-serif;
+  font-weight: 300;
 }
 
 .contact {
