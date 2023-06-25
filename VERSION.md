@@ -2,6 +2,7 @@
 
 - Big context & UI changes
 - Huge performance boost
+- Google Lighthouse performance boost
 
 ### Version 2.1.1
 
