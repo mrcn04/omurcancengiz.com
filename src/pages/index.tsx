@@ -1,4 +1,6 @@
 import * as React from 'react'
+import '@fontsource/montserrat'
+import '@fontsource/quicksand'
 
 import Layout from '../components/layout'
 import Seo from '../components/seo'
@@ -82,7 +84,7 @@ const IndexPage: React.FC = () => {
               Get in touch{' '}
             </a>
           </div>
-          {loaded ? <SocialLinks /> : null}
+          {loaded ? <SocialLinks /> : <div style={{ height: '56px' }}></div>}
         </main>
       </div>
     </Layout>
