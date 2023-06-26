@@ -87,3 +87,11 @@ const IndexPage: React.FC = () => {
 }
 
 export default IndexPage
+
+export async function getServerData() {
+  return {
+    status: 200,
+    headers: {},
+    props: {},
+  }
+}
