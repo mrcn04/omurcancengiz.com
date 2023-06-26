@@ -78,8 +78,8 @@ const IndexPage: React.FC = () => {
               {' '}
               Get in touch{' '}
             </a>
-            <SocialLinks />
           </div>
+          <SocialLinks />
         </main>
       </div>
     </Layout>
@@ -88,10 +88,10 @@ const IndexPage: React.FC = () => {
 
 export default IndexPage
 
-export async function getServerData() {
-  return {
-    status: 200,
-    headers: {},
-    props: {},
-  }
-}
+// export async function getServerData() {
+//   return {
+//     status: 200,
+//     headers: {},
+//     props: {},
+//   }
+// }

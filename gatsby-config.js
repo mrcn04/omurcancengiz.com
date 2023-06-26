@@ -3,6 +3,9 @@ require('dotenv').config({
 })
 
 module.exports = {
+  flags: {
+    DEV_SSR: false,
+  },
   siteMetadata: {
     charSet: `utf-8`,
     title: `omurcancengiz.com`,

@@ -105,15 +105,12 @@
   animation-fill-mode: both;
 }
 
-.contact {
-  animation-duration: 1s;
-}
-
 .wallpaper {
   animation-name: zoomOut;
 }
 
 .contact {
+  animation-duration: 1s;
   animation-name: bounceIn;
 }
 
