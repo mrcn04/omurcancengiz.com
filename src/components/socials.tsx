@@ -12,7 +12,7 @@ function SocialLinks() {
           </a>
         </li>
       ))}
-      <li>
+      <li style={{ marginTop: '1px' }}>
         <a href="https://spargo.app" id="spargo" aria-label="spargo" target="_blank">
           <i>
             <SpargoIcon />
