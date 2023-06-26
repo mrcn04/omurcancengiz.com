@@ -2,7 +2,7 @@
   "name": "omurcancengiz.com",
   "private": true,
   "description": "Source code of my personal website",
-  "version": "2.2.0",
+  "version": "2.3.0",
   "author": "Ömürcan Cengiz",
   "dependencies": {
     "@fontsource/montserrat": "^5.0.3",
