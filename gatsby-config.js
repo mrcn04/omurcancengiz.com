@@ -4,6 +4,7 @@ require('dotenv').config({
 
 module.exports = {
   siteMetadata: {
+    charSet: `utf-8`,
     title: `omurcancengiz.com`,
     description: `Ömürcan Cengiz, Founder & Developer`,
     author: `Ömürcan Cengiz`,
