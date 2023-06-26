@@ -1,11 +1,11 @@
-interface ISocials {
+interface ISocial {
   id: number
   name: string
   url: string
   icon: string
 }
 
-const SOCIAL_LINKS: ISocials[] = [
+const SOCIAL_LINKS: ISocial[] = [
   {
     id: 1,
     name: 'linkedin',
@@ -32,4 +32,4 @@ const SOCIAL_LINKS: ISocials[] = [
   },
 ]
 
-export { SOCIAL_LINKS, ISocials }
+export { SOCIAL_LINKS, ISocial }

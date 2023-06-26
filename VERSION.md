@@ -1,3 +1,7 @@
+### Version 2.3.0
+
+- Fix React Hydration bug
+
 ### Version 2.2.0
 
 - Big context & UI changes
