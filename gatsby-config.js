@@ -4,7 +4,7 @@ require('dotenv').config({
 
 module.exports = {
   flags: {
-    DEV_SSR: false,
+    DEV_SSR: true,
   },
   siteMetadata: {
     charSet: `utf-8`,

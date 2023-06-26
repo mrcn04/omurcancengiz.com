@@ -11,6 +11,8 @@ import imageMobile from '../images/omur-mobile.webp'
 type IDocumentType = HTMLElement | HTMLMediaElement | null
 
 const IndexPage: React.FC = () => {
+  const [loaded, setLoaded] = React.useState<boolean>(false)
+
   function loadImage(id: string, targetId?: string) {
     let el: HTMLMediaElement = document.getElementById(id) as HTMLMediaElement
     let targetEl: IDocumentType = targetId ? document.getElementById(targetId) : el
@@ -35,6 +37,7 @@ const IndexPage: React.FC = () => {
 
   React.useEffect((): void => {
     // loadImage('wallpaper')
+    setLoaded(true)
     loadImage('pictureImage', 'picture')
   }, [])
 
@@ -79,7 +82,7 @@ const IndexPage: React.FC = () => {
               Get in touch{' '}
             </a>
           </div>
-          <SocialLinks />
+          {loaded ? <SocialLinks /> : null}
         </main>
       </div>
     </Layout>
@@ -87,11 +90,3 @@ const IndexPage: React.FC = () => {
 }
 
 export default IndexPage
-
-// export async function getServerData() {
-//   return {
-//     status: 200,
-//     headers: {},
-//     props: {},
-//   }
-// }
