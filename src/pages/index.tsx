@@ -6,9 +6,8 @@ import SocialLinks from '../components/socials'
 
 import '../css/main.css'
 import '../css/animations.css'
-import image from '../images/omur-1.png'
-import wallpaper from '../images/omur-bg.webp'
-
+import image from '../images/omur.webp'
+import imageMobile from '../images/omur-mobile.webp'
 type IDocumentType = HTMLElement | HTMLMediaElement | null
 
 const IndexPage: React.FC = () => {
@@ -35,40 +34,47 @@ const IndexPage: React.FC = () => {
   }
 
   React.useEffect((): void => {
-    loadImage('wallpaper')
+    // loadImage('wallpaper')
     loadImage('pictureImage', 'picture')
   }, [])
 
   return (
     <Layout>
       <Seo title="Ömürcan Cengiz" />
-      <div id="wallpaper" className="wallpaper" data-image={wallpaper} />
+      {/* <div id="wallpaper" className="wallpaper" data-image={wallpaper} /> */}
       <div className="content">
         <aside className="side">
           <figure id="picture" className="picture">
-            <div className="picture-shadow"></div>
+            {/* <div className="picture-shadow"></div> */}
             <img
               id="pictureImage"
               className="picture-image"
+              srcSet={`${imageMobile} 480w, ${image} 800w`}
+              sizes="(max-width: 600px) 480px, 800px"
               src={image}
               alt="Portrait of Ömürcan Cengiz"
-              width="320"
-              height="320"
+              width={400}
+              height={600}
             />
           </figure>
         </aside>
         <main className="about">
           <h1 className="name">Hi, I'm Ömürcan Cengiz</h1>
-          <p className="job">Software Developer</p>
+          <p className="job">Founder & Developer</p>
           <hr className="hr" />
           <div className="description">
             <p className="summary">
+              A seasoned full stack developer with over half a decade of experience. Living the
+              irony of being an old soul while infusing my work with a timeless touch. Love creating
+              stuff that makes people's lives more creative and less annoying.
+            </p>
+            {/* <p className="summary">
               Full stack Typescript and Go developer. Mostly writing UI's with React & Vue, creating
               mobile apps with React Native and developing scalable backends with NodeJS & Go.
-            </p>
+            </p> */}
           </div>
           <div className="contact">
-            <a className="button" href="mailto:ocengiz97@hotmail.com">
+            <a className="button" href="mailto:omurccengiz@gmail.com">
               {' '}
               Get in touch{' '}
             </a>

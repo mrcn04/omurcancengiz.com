@@ -14,15 +14,21 @@ const SOCIAL_LINKS: ISocials[] = [
   },
   {
     id: 2,
+    name: 'twitter',
+    url: 'https://twitter.com/omurcancengiz',
+    icon: 'fab fa-twitter',
+  },
+  {
+    id: 3,
     name: 'github',
     url: 'https://github.com/mrcn04',
     icon: 'fab fa-github',
   },
   {
-    id: 3,
-    name: 'stackoverflow',
-    url: 'https://stackoverflow.com/users/8937209/%c3%96m%c3%bcrcan-cengiz',
-    icon: 'fab fa-stack-overflow',
+    id: 4,
+    name: 'product-hunt',
+    url: 'https://www.producthunt.com/@omurcancengiz',
+    icon: 'fab fa-product-hunt',
   },
 ]
 

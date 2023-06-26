@@ -1,12 +1,10 @@
-/* 1st part */
-
 body {
   margin: 0;
 }
 
 html {
-  background-color: #161618;
-  background-image: linear-gradient(to right, #1f1e2b, #161618);
+  background-color: #19191A;
+  background-image: linear-gradient(to right, #161618, #1e1e27);
   color: #fff;
   font-family: 'Quicksand', sans-serif;
   font-size: 14px;
@@ -18,8 +16,6 @@ html {
   overflow-x: hidden;
   text-shadow: 0 3px 5px rgba(0, 0, 0, 0.2);
 }
-
-/* 2nd part | wallpaper part 1 | Shared */
 
 .wallpaper,
 .picture-shadow,
@@ -45,10 +41,8 @@ html {
   transition-duration: 200ms;
 }
 
-/* 3rd part | wallpaper part 2 | specific */
-
 .wallpaper {
-  background-image: url('../images/omur-bg.webp');
+  /* background-image: url('../images/omur-bg.webp'); */
   background-position: center;
   background-size: cover;
   opacity: 0.4;
@@ -65,8 +59,8 @@ html {
 }
 
 .side {
-  max-height: 20rem;
-  max-width: 20rem;
+  max-width: 40rem;
+  height: 100vh;
 }
 
 .about {
@@ -74,22 +68,22 @@ html {
 }
 
 .picture {
-  padding-top: 100%;
   position: relative;
   width: 100%;
   margin: 0;
+  height: 100%;
 }
 
 .picture-shadow {
-  border-radius: 9198px;
+  border-radius: 50px;
   background-image: radial-gradient(#000 0%, rgba(0, 0, 0, 0) 70%);
   position: absolute;
-  top: 10%;
+  top: 0;
 }
 
 .picture-image {
-  border-radius: 9198px;
-  position: absolute;
+  border-radius: 50px 0 0 50px;
+  box-shadow: -5px 0px 10px #161618;
 }
 
 .name {
@@ -97,7 +91,6 @@ html {
   line-height: 1.125;
   margin-bottom: 0.5rem;
   font-weight: 500;
-  font-family: 'Quicksand', sans-serif;
 }
 
 .job {
@@ -106,7 +99,7 @@ html {
 }
 
 .hr {
-  background-color: #098fe7;
+  background-color: #219EBC;
   border: none;
   content: '';
   height: 1px;
@@ -117,7 +110,7 @@ html {
 
 .description {
   font-size: 1.3rem;
-  font-family: 'Quicksand', sans-serif;
+  font-weight: 300;
 }
 
 .contact {
@@ -129,7 +122,7 @@ html {
 .button {
   background-color: #1f1f22;
   border: 1px solid #ffe479;
-  border-radius: 9198px;
+  border-radius: 919px;
   box-shadow: 0 1rem 1rem rgba(0, 0, 0, 0.2);
   color: #ffe479;
   display: inline-block;
@@ -160,12 +153,12 @@ html {
   margin-top: 1rem;
   list-style-type: none;
   padding: 0;
-  margin-left: 0.5rem !important;
+  margin-left: 0.5rem;
 }
 
 .social li {
   height: 2rem;
-  margin-right: 0.5rem;
+  margin-right: 0.6rem;
   text-align: center;
   width: 2rem;
 }
@@ -193,21 +186,24 @@ html {
   transform: scale(1.1);
 }
 
-/* 4th part Responsiveness */
-
 @media screen and (max-width: 799px) {
   .content {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding: 2rem;
+    padding: 4rem 2rem;
     text-align: center;
   }
   .side {
-    margin-bottom: 3rem;
+    margin-bottom: 10rem;
     width: 90%;
     max-width: 16rem;
     max-height: 16rem;
+  }
+  .picture-image {
+    border-radius: 30px;
+    width: 100%;
+    height: auto;
   }
   .name {
     font-size: 1.5rem;
@@ -229,21 +225,25 @@ html {
 @media screen and (min-width: 800px) {
   .content {
     align-items: center;
-    padding: 0 8rem;
+    padding: 0  0 0 7rem;
     margin: 0 auto;
-    max-width: 1500px;
+    max-width: 1400px;
   }
   .side {
     flex-grow: 0;
     flex-shrink: 0;
-    height: 20rem;
-    margin-left: 1rem;
     order: 2;
-    width: 20rem;
+    max-height: 850px;
   }
   .about {
     flex-grow: 1;
     flex-shrink: 1;
     margin-top: 2rem;
+  }
+}
+
+@media screen and (min-height: 850px) {
+  .picture-image {
+    border-radius: 40px;
   }
 }
