@@ -10,7 +10,7 @@
     "@types/react": "^17.0.39",
     "@types/react-dom": "^17.0.11",
     "@types/react-helmet": "^6.1.5",
-    "gatsby": "^5.13.6",
+    "gatsby": "^5.14.1",
     "gatsby-plugin-google-gtag": "^5.11.0",
     "gatsby-plugin-manifest": "^5.11.0",
     "gatsby-plugin-offline": "^6.13.2",
