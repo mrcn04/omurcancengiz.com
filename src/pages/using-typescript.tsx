@@ -17,7 +17,6 @@ const UsingTypescript: React.FC<PageProps<DataProps>> = ({ data, path }) => {
 
   return (
     <Layout>
-      <Seo title="Ömürcan Cengiz, Founder & Developer" />
       <h1>Gatsby supports TypeScript by default!</h1>
       <p>
         This means that you can create and write <em>.ts/.tsx</em> files for your pages, components
@@ -41,6 +40,10 @@ const UsingTypescript: React.FC<PageProps<DataProps>> = ({ data, path }) => {
 }
 
 export default UsingTypescript
+
+export function Head() {
+  return <Seo title="Ömürcan Cengiz, Founder & Developer" />
+}
 
 export const query = graphql`
   {

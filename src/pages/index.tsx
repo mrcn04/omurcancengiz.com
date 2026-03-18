@@ -45,7 +45,6 @@ const IndexPage: React.FC = () => {
 
   return (
     <Layout>
-      <Seo title="Ömürcan Cengiz" />
       {/* <div id="wallpaper" className="wallpaper" data-image={wallpaper} /> */}
       <div className="content">
         <aside className="side">
@@ -92,3 +91,7 @@ const IndexPage: React.FC = () => {
 }
 
 export default IndexPage
+
+export function Head() {
+  return <Seo title="Ömürcan Cengiz" />
+}

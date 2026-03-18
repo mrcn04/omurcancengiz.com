@@ -7,22 +7,19 @@
   "dependencies": {
     "@fontsource/montserrat": "^5.0.3",
     "@fontsource/quicksand": "^5.0.3",
-    "@types/react": "^17.0.39",
-    "@types/react-dom": "^17.0.11",
-    "@types/react-helmet": "^6.1.5",
+    "@types/react": "^18.0.0",
+    "@types/react-dom": "^18.0.0",
     "gatsby": "^5.16.1",
     "gatsby-plugin-google-gtag": "^5.11.0",
     "gatsby-plugin-manifest": "^5.11.0",
     "gatsby-plugin-offline": "^6.13.2",
-    "gatsby-plugin-react-helmet": "^6.13.1",
     "gatsby-source-filesystem": "^5.11.0",
     "prop-types": "^15.8.0",
     "react": "^18.0.0",
-    "react-dom": "^18.0.0",
-    "react-helmet": "^6.1.0"
+    "react-dom": "^18.0.0"
   },
   "devDependencies": {
-    "prettier": "^2.5.1"
+    "prettier": "^3.0.0"
   },
   "keywords": [
     "ömürcan",

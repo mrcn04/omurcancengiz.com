@@ -15,7 +15,6 @@ module.exports = {
     keywords: `ömürcan, cengiz, ömürcan cengiz, omurcan, cengiz, omurcan cengiz, ömürcancengiz, omurcancengiz, software developer, fullstack, developer`,
   },
   plugins: [
-    `gatsby-plugin-react-helmet`,
     {
       resolve: `gatsby-source-filesystem`,
       options: {
@@ -37,7 +36,7 @@ module.exports = {
     {
       resolve: `gatsby-plugin-google-gtag`,
       options: {
-        trackingIds: [process.env.GOOGLE_GTAG],
+        trackingIds: [process.env.GOOGLE_GTAG].filter(Boolean),
         pluginConfig: {
           head: true,
         },

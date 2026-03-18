@@ -1,5 +1,4 @@
 import * as React from 'react'
-import { Helmet } from 'react-helmet'
 import { useStaticQuery, graphql } from 'gatsby'
 import wallpaper from '../images/omur-bg.webp'
 
@@ -33,74 +32,31 @@ function Seo({ description = '', lang = 'en', meta = [], title }: ISeoProps) {
   const previewImage: string = `${site.siteMetadata.siteUrl}/${wallpaper}`
 
   return (
-    <Helmet
-      htmlAttributes={{
-        lang,
-        prefix: 'og: http://ogp.me/ns#',
-      }}
-      title={title}
-      titleTemplate={defaultTitle ? `%s | Founder & Developer` : undefined}
-      meta={[
-        {
-          name: `author`,
-          content: site.siteMetadata?.author,
-        },
-        {
-          name: `description`,
-          content: metaDescription,
-        },
-        {
-          name: `keywords`,
-          content: typeof keywords === 'string' ? keywords : keywords.join(','),
-        },
-        {
-          property: `og:title`,
-          content: title,
-        },
-        {
-          property: `og:description`,
-          content: metaDescription,
-        },
-        {
-          property: `og:url`,
-          content: site.siteMetadata.siteUrl,
-        },
-        {
-          property: `og:type`,
-          content: `website`,
-        },
-        {
-          property: `og:image`,
-          content: previewImage,
-        },
-        {
-          property: `image`,
-          content: previewImage,
-        },
-        {
-          name: `twitter:card`,
-          content: `summary_large_image`,
-        },
-        {
-          name: `twitter:image`,
-          content: previewImage,
-        },
-        {
-          name: `twitter:creator`,
-          content: site.siteMetadata?.author || ``,
-        },
-        {
-          name: `twitter:title`,
-          content: title,
-        },
-        {
-          name: `twitter:description`,
-          content: metaDescription,
-        },
-      ].concat(meta)}
-    >
-      <script defer src="https://use.fontawesome.com/releases/v5.0.0/js/all.js"></script>
-    </Helmet>
+    <>
+      <html lang={lang} />
+      <title>{defaultTitle ? `${title} | Founder & Developer` : title}</title>
+      <meta name="author" content={site.siteMetadata?.author} />
+      <meta name="description" content={metaDescription} />
+      <meta
+        name="keywords"
+        content={typeof keywords === 'string' ? keywords : keywords.join(',')}
+      />
+      <meta property="og:title" content={title} />
+      <meta property="og:description" content={metaDescription} />
+      <meta property="og:url" content={site.siteMetadata.siteUrl} />
+      <meta property="og:type" content="website" />
+      <meta property="og:image" content={previewImage} />
+      <meta property="image" content={previewImage} />
+      <meta name="twitter:card" content="summary_large_image" />
+      <meta name="twitter:image" content={previewImage} />
+      <meta name="twitter:creator" content={site.siteMetadata?.author || ''} />
+      <meta name="twitter:title" content={title} />
+      <meta name="twitter:description" content={metaDescription} />
+      {meta.map(({ name, content }) => (
+        <meta key={name} name={name} content={content} />
+      ))}
+      <script defer src="https://use.fontawesome.com/releases/v5.0.0/js/all.js" />
+    </>
   )
 }
 
