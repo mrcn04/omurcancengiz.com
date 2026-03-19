@@ -3,6 +3,7 @@ require('dotenv').config({
 })
 
 module.exports = {
+  pathPrefix: `/`,
   flags: {
     DEV_SSR: true,
   },
