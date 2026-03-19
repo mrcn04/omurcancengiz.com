@@ -29,7 +29,7 @@ function Seo({ description = '', lang = 'en', meta = [], title }: ISeoProps) {
   const metaDescription: string = description || site.siteMetadata.description
   const defaultTitle: string = site.siteMetadata?.title
   const keywords: Array<string> | string = site.siteMetadata.keywords
-  const previewImage: string = `${site.siteMetadata.siteUrl}/${wallpaper}`
+  const previewImage: string = `${site.siteMetadata.siteUrl}${wallpaper}`
 
   return (
     <>
