@@ -1,0 +1,1 @@
+(self.webpackChunkomurcancengiz_com=self.webpackChunkomurcancengiz_com||[]).push([[522],{8522:function(){}}]);
