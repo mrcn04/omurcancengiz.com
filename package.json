@@ -19,6 +19,7 @@
     "react-dom": "^18.0.0"
   },
   "devDependencies": {
+    "gh-pages": "^6.3.0",
     "prettier": "^3.0.0"
   },
   "keywords": [
@@ -42,7 +43,8 @@
     "start": "gatsby develop",
     "serve": "gatsby serve",
     "clean": "gatsby clean",
-    "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\" && exit 1"
+    "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\" && exit 1",
+    "deploy": "gatsby build && gh-pages -d public"
   },
   "repository": {
     "type": "git",
