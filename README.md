@@ -1,35 +1,35 @@
 ## omurcancengiz.com
 
-Source codes of my personal website using Gatsby.js powered by Typescript.
+Source code of my personal website built with Next.js and TypeScript.
 
 ![TypeScript](https://img.shields.io/badge/typescript-%23007ACC.svg?style=for-the-badge&logo=typescript&logoColor=white)
-![Gatsby](https://img.shields.io/badge/Gatsby-%23663399.svg?style=for-the-badge&logo=gatsby&logoColor=white)
+![Next JS](https://img.shields.io/badge/Next-black?style=for-the-badge&logo=next.js&logoColor=white)
 [![License](https://img.shields.io/github/license/thenewboston-developers/website)](http://opensource.org/licenses/MIT)
 
 ## Google Lighthouse Scores
 
-![image description](./src/images/lighthouse-scores.gif)
+![Lighthouse Scores](./public/lighthouse-scores.gif)
 
 ## Installation and Running
 
 Install dependencies
 
-```javascript
+```bash
 npm install
 ```
 
-Run
+Run development server
 
-```javascript
-npm run develop
+```bash
+npm run dev
 ```
 
-### Possible Errors
+## Deployment
 
-When installing for the first time, if you get an **ERROR #98123**, deleted your `package-lock.json` file, `.cache` folder, `node_modules` folder and re-run the `npm install` command.
+The site is deployed to GitHub Pages via GitHub Actions. Any push to the `master` branch triggers an automatic build and deploy.
 
 ## License
 
 This project is [MIT licensed](http://opensource.org/licenses/MIT).
 
-<sub>Copyright (c) 2018-2023 Ömürcan Cengiz</sub>
+<sub>Copyright (c) 2018-2026 Ömürcan Cengiz</sub>

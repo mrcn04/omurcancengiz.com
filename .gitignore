@@ -54,9 +54,15 @@ typings/
 # dotenv environment variable files
 .env*
 
-# gatsby files
+# Next.js
+.next/
+out/
+
+# Gatsby leftover cache
 .cache/
-public
+
+# dotenv
+.env.local
 
 # Mac files
 .DS_Store

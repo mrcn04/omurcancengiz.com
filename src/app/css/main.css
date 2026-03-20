@@ -6,7 +6,7 @@ html {
   background-color: #19191A;
   background-image: linear-gradient(to right, #161618, #1e1e27);
   color: #fff;
-  font-family: 'Quicksand', sans-serif;
+  font-family: var(--font-quicksand), 'Quicksand', sans-serif;
   font-size: 14px;
   -moz-osx-font-smoothing: grayscale;
   -webkit-font-smoothing: antialiased;
@@ -29,7 +29,7 @@ html {
 
 .job,
 .button {
-  font-family: 'Montserrat', 'Quicksand', sans-serif;
+  font-family: var(--font-montserrat), 'Montserrat', var(--font-quicksand), 'Quicksand', sans-serif;
   letter-spacing: 0.3em;
   text-transform: uppercase;
 }

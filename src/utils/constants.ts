@@ -32,4 +32,5 @@ const SOCIAL_LINKS: ISocial[] = [
   },
 ]
 
-export { SOCIAL_LINKS, ISocial }
+export { SOCIAL_LINKS }
+export type { ISocial }

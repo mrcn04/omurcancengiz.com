@@ -1,3 +1,16 @@
+## Version 3.0.0
+
+- Migrated from Gatsby.js to Next.js 16 with App Router
+- Added Tailwind CSS 4
+- Replaced `gh-pages` deploy script with GitHub Actions workflow
+- Updated all dependencies to latest versions (React 19, TypeScript 5, Node 22)
+- Improved SEO with Next.js native `metadata` API
+- Cleaned up dead code
+
+### Version 2.4.0
+
+- Started hosting it on Github Pages
+
 ### Version 2.3.0
 
 - Fix React Hydration bug

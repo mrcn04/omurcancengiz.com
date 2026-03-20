@@ -1,4 +1,3 @@
-import React from 'react'
 import { SOCIAL_LINKS, ISocial } from '../utils/constants'
 import SpargoIcon from './spargo-icon'
 
