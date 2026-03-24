@@ -1,8 +1,13 @@
 import type { Metadata } from 'next'
-import { Montserrat, Quicksand } from 'next/font/google'
+import { Montserrat, Quicksand, Geist } from 'next/font/google'
 import Script from 'next/script'
+import Navbar from '@/components/navbar'
+import Footer from '@/components/footer'
+import { cn } from '@/lib/utils'
 import './css/main.css'
 import './css/animations.css'
+
+const geist = Geist({subsets:['latin'],variable:'--font-sans'});
 
 const quicksand = Quicksand({
   subsets: ['latin'],
@@ -53,7 +58,7 @@ const GTAG_ID = process.env.NEXT_PUBLIC_GOOGLE_GTAG
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
-    <html lang="en" className={`${quicksand.variable} ${montserrat.variable}`}>
+    <html lang="en" className={cn(quicksand.variable, montserrat.variable, 'font-sans', geist.variable)}>
       <body>
         {GTAG_ID && (
           <>
@@ -75,7 +80,9 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
           src="https://use.fontawesome.com/releases/v5.0.0/js/all.js"
           strategy="afterInteractive"
         />
+        <Navbar />
         {children}
+        <Footer />
       </body>
     </html>
   )
