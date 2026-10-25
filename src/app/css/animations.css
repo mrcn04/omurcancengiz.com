@@ -1,201 +1,58 @@
-@keyframes bounceIn {
+/* ─── Hero entrance ─────────────────────────────── */
+
+@keyframes fadeInUp {
   from {
-    opacity: 0.01;
-    transform: scale(0.5);
+    opacity: 0;
+    transform: translateY(30px);
   }
-
-  to {
-    opacity: 1;
-    transform: scale(1);
-  }
-}
-
-@keyframes fillUp {
-  from {
-    transform: scaleX(0);
-  }
-
-  to {
-    transform: scaleX(1);
-  }
-}
-
-@keyframes picImage {
-  from {
-    opacity: 0.01;
-    transform: scale(0.96) translateY(1.5rem);
-  }
-
-  to {
-    opacity: 1;
-    transform: scale(1) translateY(0);
-  }
-}
-
-@keyframes picShadow {
-  from {
-    opacity: 0.01;
-    transform: scale(1.2) translateY(4rem);
-  }
-
-  to {
-    opacity: 1;
-    transform: scale(1.1) translateY(0);
-  }
-}
-
-@keyframes slideDown {
-  from {
-    opacity: 0.01;
-    transform: translateY(-1rem);
-  }
-
   to {
     opacity: 1;
     transform: translateY(0);
   }
 }
 
-@keyframes slideDownPicture {
-  from {
-    opacity: 0.01;
-    transform: translateY(-5rem);
-  }
+.hero-animate {
+  opacity: 0;
+  animation: fadeInUp 1s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+}
 
+.hero-animate-1 { animation-delay: 0s; }
+.hero-animate-2 { animation-delay: 0.12s; }
+.hero-animate-3 { animation-delay: 0.24s; }
+.hero-animate-4 { animation-delay: 0.36s; }
+
+/* ─── 404 entrance ──────────────────────────────── */
+
+@keyframes blurIn {
+  from {
+    opacity: 0;
+    filter: blur(2px);
+  }
   to {
     opacity: 1;
-    transform: translateY(0);
+    filter: blur(0);
   }
 }
 
-@keyframes slideUp {
+@keyframes fadeIn {
   from {
-    opacity: 0.01;
-    transform: translateY(1rem);
+    opacity: 0;
   }
-
   to {
     opacity: 1;
-    transform: translateY(0);
   }
 }
 
-@keyframes zoomOut {
-  from {
-    opacity: 0.01;
-    transform: scale(1.05);
-  }
-
-  to {
-    opacity: 0.6;
-    transform: scale(1);
-  }
+.blur-in {
+  opacity: 0;
+  animation: blurIn 0.85s cubic-bezier(0.23, 1, 0.32, 1) forwards;
 }
 
-.wallpaper,
-.picture-shadow,
-.picture-image,
-.name,
-.job,
-.hr,
-.contact,
-.description,
-.social li {
-  animation-duration: 1.5s;
-  animation-timing-function: cubic-bezier(0, 0.5, 0, 1);
-  animation-fill-mode: both;
-}
+.blur-in-1 { animation-delay: 0.55s; }
+.blur-in-2 { animation-delay: 0.7s; }
+.blur-in-3 { animation-delay: 0.85s; }
 
-.wallpaper {
-  animation-name: zoomOut;
-}
-
-.contact {
-  animation-duration: 1s;
-  animation-name: bounceIn;
-}
-
-.picture-shadow,
-.picture-image {
-  animation-duration: 1.2s;
-  animation-timing-function: cubic-bezier(0, 0.5, 0.25, 1.25);
-}
-
-.wallpaper,
-.picture-shadow,
-.picture-image {
-  opacity: 0.01;
-}
-
-.wallpaper {
-  animation-timing-function: ease-out;
-}
-.wallpaper.is-loaded {
-  animation-delay: 100ms;
-  animation-name: zoomOut;
-}
-.picture.is-loaded .picture-shadow {
-  animation-name: picShadow;
-}
-.picture.is-loaded .picture-image {
-  animation-name: picImage;
-}
-.name {
-  animation-name: slideDown;
-}
-.job {
-  animation-name: slideUp;
-}
-.hr {
-  animation-name: fillUp;
-}
-.description {
-  animation-name: slideUp;
-}
-
-.social li {
-  animation-duration: 500ms;
-  animation-name: slideUp;
-  animation-timing-function: cubic-bezier(0.5, 0, 0.5, 1.5);
-}
-
-.name {
-  animation-delay: 100ms;
-}
-.job {
-  animation-delay: 200ms;
-}
-.hr {
-  animation-delay: 300ms;
-}
-.description {
-  animation-delay: 400ms;
-}
-.picture-shadow {
-  animation-delay: 600ms;
-}
-.contact {
-  animation-delay: 700ms;
-}
-
-.social li:nth-child(1) {
-  animation-delay: 1s;
-}
-.social li:nth-child(2) {
-  animation-delay: 1.2s;
-}
-.social li:nth-child(3) {
-  animation-delay: 1.4s;
-}
-.social li:nth-child(4) {
-  animation-delay: 1.6s;
-}
-.social li:nth-child(5) {
-  animation-delay: 1.8s;
-}
-
-@media screen and (max-width: 799px) {
-  .picture.is-loaded .picture-image {
-    animation-name: slideDownPicture;
-  }
+.fade-in-delayed {
+  opacity: 0;
+  animation: fadeIn 1.15s cubic-bezier(0.23, 1, 0.32, 1) 0.28s forwards;
 }
